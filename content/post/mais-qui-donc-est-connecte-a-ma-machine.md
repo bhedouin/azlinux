@@ -5,7 +5,7 @@ categories:
     - Sécurité
     - Utilitaires
 ---
-Vous pensez que quelqu'un s'est introduit dans votre réseau local voici quelques commandes faut essayer de trouver le problème.
+Vous pensez que quelqu'un s'est introduit dans votre réseau local voici quelques commandes à essayer afin de trouver le problème.
 
 Pour afficher les dix dernières connexion :
 
