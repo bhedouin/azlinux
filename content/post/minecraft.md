@@ -1,0 +1,41 @@
+---
+title: "Installer de zéro un serveur Minecraft sur votre Raspberry Pi"
+date: 2022-01-26
+slug: minecraft
+image: https://raspberry-pi.fr/wp-content/uploads/2015/03/minecraft.jpg
+categories:
+    - Minecraft
+    - Raspberry Pi
+---
+
+1. Récupérer la dernière image Raspberry Pi OS (64 bits)
+> https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-11-08/2021-10-30-raspios-bullseye-arm64.zip
+2. Flasher l'image en utilisant le logiciel et avant utiliser cette commande `Ctrl+Shift+X` pour afficher les paramètres supplémentaires activer le SSH et paramétrer le mot de passe
+> https://www.raspberrypi.com/software/
+3. Télécharger le fichier d'installation de Spigot Minecraft
+```bash
+wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+```
+4. Télécharger le paquet Java, Git et Screen
+```bash
+apt install openjdk-17-jdk git screen
+```
+5. Lancer l'installation
+```bash
+java -Xmx1024M -jar /home/minecraft/BuildTools.jar --rev 1.18.1
+```
+6. Accepter les conditions d'utilisation
+```bash
+sed -i 's/false/true/g' /home/minecraft/eula.txt
+```
+7. Suivre le tutoriel pour avoir un script pour exécuter le serveur
+> https://www.skritz.com/minecraft-script-demarrer-serveur-linux/
+8. Utiliser ses commandes pour overclockée le Raspberry Pi (optionnel)
+```bash
+sed -i 's/#arm_freq/arm_freq/g' /boot/config.txt
+sed -i 's/#over_voltage=/over_voltage=/g' /boot/config.txt
+sed -i 's/#gpu_freq/gpu_freq/g' /boot/config.txt
+sed -i 's/arm_freq=.*/arm_freq=2147/' /boot/config.txt
+sed -i 's/over_voltage=.*/over_voltage=6/' /boot/config.txt
+sed -i 's/gpu_freq=.*/gpu_freq=750/' /boot/config.txt
+```
