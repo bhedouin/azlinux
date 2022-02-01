@@ -1,8 +1,8 @@
 ---
 title: "Minecraft"
-description: "This is an example category"
+description: "Minecraft est un jeu vidéo de type aventure « bac à sable » (construction complètement libre) développé par le Suédois Markus Persson, alias Notch, puis par la société Mojang Studios. Il s'agit d'un univers composé de voxels et généré de façon procédurale, qui intègre un système d'artisanat axé sur l'exploitation puis la transformation de ressources naturelles (minéralogiques, fossiles, animales et végétales)."
 slug: "minecraft"
-image: "hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg"
+image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5447227/raw.webp"
 style:
     background: "#2a9d8f"
     color: "#fff"

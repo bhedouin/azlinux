@@ -1,8 +1,9 @@
 ---
 title: "JSON"
-description: "This is an example category"
+description: "JavaScript Object Notation (JSON) est un format de données textuelles dérivé de la notation des objets du langage JavaScript."
 slug: "json"
-image: ""
+image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5447227/raw.webp"
 style:
+    background: "#2a9d8f"
     color: "#fff"
 ---

@@ -4,5 +4,6 @@ description: "Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM
 slug: "raspberry-pi"
 image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/4326459/raw.webp"
 style:
+    background: "#2a9d8f"
     color: "#fff"
 ---

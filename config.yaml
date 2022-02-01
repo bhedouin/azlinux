@@ -13,7 +13,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/4326459/raw.webp
+    favicon: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/7757594/raw.webp
     footer:
         since: 2022
         customText:
@@ -26,7 +26,7 @@ params:
         avatar:
             enabled: true
             local: false
-            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/4326459/raw.webp
+            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5589895/raw.webp
     article:
         math: false
         toc: true
@@ -61,7 +61,7 @@ params:
         opengraph:
             enabled: true
             local: false
-            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/4326459/raw.webp
+            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/9362274/raw.webp
 
     colorScheme:
         toggle: true
@@ -99,6 +99,12 @@ menu:
           url: https://azlinux.fr/index.xml
           params:
             icon: rss
+
+        - identifier: youtube
+          name: YouTube
+          url: https://www.youtube.com/channel/UCv1Dfrx1Z1sF94s-d7M92Bw
+          params:
+            icon: brand-youtube
             
 related:
     includeNewer: true
