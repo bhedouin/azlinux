@@ -4,6 +4,6 @@ description: "JavaScript Object Notation (JSON) est un format de données textue
 slug: "json"
 image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5447227/raw.webp"
 style:
-    background: "#2a9d8f"
+    background: "#c80000"
     color: "#fff"
 ---

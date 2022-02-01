@@ -4,6 +4,6 @@ description: "Python est un langage de programmation interprété, multi-paradig
 slug: "python"
 image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/4733223/raw.webp"
 style:
-    background: "#2a9d8f"
+    background: "#c80000"
     color: "#fff"
 ---

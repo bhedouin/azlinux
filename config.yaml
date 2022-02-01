@@ -18,7 +18,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/7757594/raw.webp
+    favicon: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/7757594/raw.png
     footer:
         since: 2022
         customText:
