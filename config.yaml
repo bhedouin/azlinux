@@ -8,6 +8,11 @@ hasCJKLanguage: false
 permalinks:
     post: /:slug/
     page: /:slug/
+outputFormats:
+    jsonfeed:
+        mediaType: "application/json"
+        baseName: "feed"
+        isPlainText: true
 params:
     mainSections:
         - post
