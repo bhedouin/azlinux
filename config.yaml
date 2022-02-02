@@ -107,9 +107,15 @@ menu:
 
         - identifier: youtube
           name: YouTube
-          url: https://www.youtube.com/channel/UCv1Dfrx1Z1sF94s-d7M92Bw
+          url: https://www.youtube.com/channel/UCv1Dfrx1Z1sF94s-d7M92Bw?sub_confirmation=1
           params:
             icon: brand-youtube
+
+        - identifier: github
+          name: GitHub
+          url: https://github.com/baptiste313/azlinux
+          params:
+            icon: brand-github
             
 related:
     includeNewer: true
