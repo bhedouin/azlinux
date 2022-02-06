@@ -41,11 +41,17 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
     comments:
         enabled: true
-        provider: utterances
-        utterances:
+        provider: giscus
+        giscus:
             repo: baptiste313/azlinux
-            issueTerm: pathname
-            label:
+            repoID: R_kgDOGwq8tw
+            category: General
+            categoryID: DIC_kwDOGwq8t84CA9fa
+            mapping: title
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 0
     widgets:
         enabled:
             - search
