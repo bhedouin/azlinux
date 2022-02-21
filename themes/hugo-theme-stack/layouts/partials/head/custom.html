@@ -1,5 +1,24 @@
 <meta name="theme-color" content="#c80000">
 <link rel="preconnect" href="https://discord.com/">
 <link rel="preconnect" href="https://cdn.jsdelivr.net/">
-<link rel="dns-prefetch" href="https://discord.com/">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+		/// Overwrite CSS variable
+    :root {
+        --article-font-family: "Roboto Serif", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
