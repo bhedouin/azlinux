@@ -14,11 +14,11 @@ PhotoSwipe:
       type: script
       defer: true
 
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/default-skin/default-skin.css
+    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/default-skin/default-skin.min.css
       integrity:
       type: style
 
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe.css
+    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe.min.css
       integrity:
       type: style
 
