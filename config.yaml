@@ -20,7 +20,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/7757594/raw.png
+    favicon: https://pic.azlinux.fr/v1/77575/raw.png
     footer:
         since: 2022
         customText:
@@ -28,12 +28,12 @@ params:
         published: Jan 02, 2006
         lastUpdated: Jan 02, 2006 15:04 MST
     sidebar:
-        emoji: 🐧
+        emoji:
         subtitle:
         avatar:
             enabled: true
             local: false
-            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5589895/raw.webp
+            src: https://pic.azlinux.fr/v1/55898/raw.webp
     article:
         math: false
         toc: true
@@ -42,7 +42,7 @@ params:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
     comments:
-        enabled: true
+        enabled: false
         provider: giscus
         giscus:
             repo: baptiste313/azlinux
@@ -50,45 +50,36 @@ params:
             category: General
             categoryID: DIC_kwDOGwq8t84CA9fa
             mapping: title
-            lightTheme:
-            darkTheme:
+            lightTheme: https://cdn.jsdelivr.net/gh/giscus/giscus/styles/themes/light.css
+            darkTheme: https://cdn.jsdelivr.net/gh/giscus/giscus/styles/themes/dark_dimmed.css
             reactionsEnabled: 1
             emitMetadata: 0
     widgets:
         enabled:
             - search
             - archives
-
         archives:
             limit: 5
 
         tagCloud:
             limit: 10
-
     opengraph:
         twitter:
             site:
             card: summary_large_image
-
     defaultImage:
         opengraph:
             enabled: true
             local: false
-            src: https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/9362274/raw.webp
-
+            src: https://pic.azlinux.fr/v1/93622/raw.webp
     colorScheme:
         toggle: true
         default: auto
-
     imageProcessing:
         cover:
-            enabled: true
+            enabled: false
         content:
-            enabled: true
-
-### Custom menu
-### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
-### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+            enabled: false
 menu:
     main:
         - identifier: home
@@ -96,35 +87,29 @@ menu:
           url: /
           weight: -100
           params:
-              ### For demonstration purpose, the home link will be open in a new tab
               newTab: false
               icon: home
-    
     social:
         - identifier: discord
           name: Discord
           url: https://discord.com/invite/aThsHpfa7J
           params:
             icon: brand-discord
-            
         - identifier: rss
           name: RSS
           url: https://azlinux.fr/index.xml
           params:
             icon: rss
-
         - identifier: youtube
           name: YouTube
           url: https://www.youtube.com/channel/UCv1Dfrx1Z1sF94s-d7M92Bw?sub_confirmation=1
           params:
             icon: brand-youtube
-
         - identifier: github
           name: GitHub
           url: https://github.com/baptiste313/azlinux
           params:
             icon: brand-github
-            
 related:
     includeNewer: true
     threshold: 60
@@ -135,7 +120,6 @@ related:
 
         - name: categories
           weight: 200
-
 markup:
     goldmark:
         renderer:
