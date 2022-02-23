@@ -1,7 +1,7 @@
 baseurl: https://azlinux.fr/
 languageCode: fr-FR
 theme: hugo-theme-stack
-paginate: 5
+paginate: 20
 title: azLinux
 DefaultContentLanguage: fr
 hasCJKLanguage: false
