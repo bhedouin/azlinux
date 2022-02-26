@@ -1,24 +1,24 @@
 Vibrant:
-    - src: https://cdn.jsdelivr.net/npm/node-vibrant/dist/vibrant.min.js
+    - src: https://azlinux.fr/assets/js/vibrant.min.js
       integrity:
       type: script
 
 PhotoSwipe:
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe.min.js
+    - src: https://azlinux.fr/assets/js/photoswipe.min.js
       integrity:
       type: script
       defer: true
 
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe-ui-default.min.js
+    - src: https://azlinux.fr/assets/js/photoswipe-ui-default.min.js
       integrity:
       type: script
       defer: true
 
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/default-skin/default-skin.min.css
+    - src: https://azlinux.fr/assets/css/default-skin.min.css
       integrity:
       type: style
 
-    - src: https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe.min.css
+    - src: https://azlinux.fr/assets/css/photoswipe.min.css
       integrity:
       type: style
 
