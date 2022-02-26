@@ -11,4 +11,5 @@
 ## Acknowledgments
 
 - [Cloudflare Pages](https://pages.cloudflare.com)
+- [Open Graph Image](https://og-image.vercel.app/)
 - [Hugo Theme Stack](https://github.com/CaiJimmy/hugo-theme-stack)
