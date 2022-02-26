@@ -1,7 +1,7 @@
 baseurl: https://azlinux.fr/
 languageCode: fr-FR
 theme: hugo-theme-stack
-paginate: 20
+paginate: 50
 title: azLinux
 DefaultContentLanguage: fr
 hasCJKLanguage: false
@@ -20,7 +20,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://pic.azlinux.fr/v1/77575/raw.png
+    favicon: https://azlinux.fr/v1/images/77575/raw.png
     footer:
         since: 2022
         customText:
@@ -33,7 +33,7 @@ params:
         avatar:
             enabled: true
             local: false
-            src: https://pic.azlinux.fr/v1/55898/raw.webp
+            src: https://azlinux.fr/v1/images/55898/raw.webp
     article:
         math: false
         toc: true
@@ -42,7 +42,7 @@ params:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
     comments:
-        enabled: false
+        enabled: true
         provider: giscus
         giscus:
             repo: baptiste313/azlinux
@@ -71,7 +71,7 @@ params:
         opengraph:
             enabled: true
             local: false
-            src: https://pic.azlinux.fr/v1/93622/raw.webp
+            src: https://azlinux.fr/v1/images/93622/raw.webp
     colorScheme:
         toggle: true
         default: auto
