@@ -4,7 +4,7 @@
 [![](https://img.shields.io/discord/935805859840290876?color=5865F2&label=discord&style=for-the-badge)](https://discord.com/invite/aThsHpfa7J/)
 [![License](https://img.shields.io/github/license/baptiste313/azlinux?style=for-the-badge)](https://unlicense.org/)
   
-[![](uploads/a16e90453702117580ac1eb223eeb3a1.webp)](https://azlinux.fr/)
+[![](static/uploads/5cc0d80cc1dcc7cdae4cf72528508cd4.webp)](https://azlinux.fr/)
 
 </div>
 
