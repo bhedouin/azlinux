@@ -1,1 +1,11 @@
-<script type="text/javascript">var xmlHttpRequest;(xmlHttpRequest=new XMLHttpRequest).open("GET","https://discord.com/api/guilds/935805859840290876/embed.json",!0),xmlHttpRequest.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var t=JSON.parse(this.responseText);document.getElementById("discordCount").innerHTML=t.presence_count-1}},xmlHttpRequest.send(),(xmlHttpRequest=new XMLHttpRequest).open("GET","https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCv1Dfrx1Z1sF94s-d7M92Bw&fields=items/statistics/subscriberCount&key=AIzaSyBT_3Z1wUJcShIk59R6PptxkVp3LJvThxo",!0),xmlHttpRequest.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var t=JSON.parse(this.responseText);document.getElementById("subscriberCount").innerHTML=t.items[0].statistics.subscriberCount}},xmlHttpRequest.send();</script>
+<script type="text/javascript">
+    var xmlHttpRequest = new XMLHttpRequest();
+        xmlHttpRequest.open("GET", "https://discord.com/api/guilds/935805859840290876/embed.json", true);
+        xmlHttpRequest.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var d = JSON.parse(this.responseText);
+                document.getElementById("discordCount").innerHTML = d.presence_count;
+            }  
+        };  
+    xmlHttpRequest.send();
+</script>

@@ -1,39 +1,20 @@
 Vibrant:
-    - src: https://azlinux.fr/assets/js/vibrant.min.js
-      integrity:
+    - src: https://unpkg.com/node-vibrant@3.1.6/dist/vibrant.min.js
+      integrity: sha512-SzKezyOOe19oOvjHkyAkQXCjZ3qmGtpl78ZkLEemazIvoh+kgDVDWYELe3giYBr+40LPqJDAolvCv3TVRSMIaA==
       type: script
-
-PhotoSwipe:
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
-      integrity: sha512-2R4VJGamBudpzC1NTaSkusXP7QkiUYvEKhpJAxeVCqLDsgW4OqtzorZGpulE3eEA7p++U0ZYmqBwO3m+R2hRjA==
-      type: script
-      defer: true
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
-      integrity: sha512-SxO0cwfxj/QhgX1SgpmUr0U2l5304ezGVhc0AO2YwOQ/C8O67ynyTorMKGjVv1fJnPQgjdxRz6x70MY9r0sKtQ==
-      type: script
-      defer: true
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css
-      integrity: sha512-Rck8F2HFBjAQpszOB9Qy+NVLeIy4vUOMB7xrp46edxB3KXs2RxXRguHfrJqNK+vJ+CkfvcGqAKMJTyWYBiBsGA==
-      type: style
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css
-      integrity: sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==
-      type: style
 
 KaTeX:
-    - src: https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css
-      integrity:
+    - src: https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css
+      integrity: sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn
       type: style
 
-    - src: https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js
-      integrity:
+    - src: https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js
+      integrity: sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8
       type: script
       defer: true
 
-    - src: https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js
-      integrity:
+    - src: https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js
+      integrity: sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl
       type: script
       defer: true
 

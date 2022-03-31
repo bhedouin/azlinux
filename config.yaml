@@ -3,16 +3,19 @@ languageCode: fr-FR
 theme: hugo-theme-stack
 paginate: 50
 title: azLinux
+
+# Theme i18n support
+# Available values: ar, ca, de, el, en, es, fr, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
 DefaultContentLanguage: fr
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
+
 permalinks:
     post: /:slug/
     page: /:slug/
-outputFormats:
-    jsonfeed:
-        mediaType: "application/json"
-        baseName: "feed"
-        isPlainText: true
+
 params:
     author: baptiste
     description: Nous ne parlons pas seulement de Linux, mais aussi de nombreux sujets intéressants comme la sécurité, la protection des données, etc.
@@ -20,20 +23,24 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://azlinux.fr/v1/images/77575/raw.png
+    favicon:
+
     footer:
-        since: 2022
+        since: 2020
         customText:
+
     dateFormat:
         published: Jan 02, 2006
         lastUpdated: Jan 02, 2006 15:04 MST
+
     sidebar:
         emoji:
         subtitle:
         avatar:
             enabled: true
             local: false
-            src: https://azlinux.fr/v1/images/55898/raw.webp
+            src: https://azlinux.fr/uploads/a16e90453702117580ac1eb223eeb3a1.webp
+
     article:
         math: false
         toc: true
@@ -41,45 +48,67 @@ params:
         license:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
+
     comments:
         enabled: true
         provider: giscus
+
         giscus:
             repo: baptiste313/azlinux
             repoID: R_kgDOGwq8tw
             category: General
             categoryID: DIC_kwDOGwq8t84CA9fa
             mapping: title
-            lightTheme: https://cdn.jsdelivr.net/gh/giscus/giscus/styles/themes/light.css
-            darkTheme: https://cdn.jsdelivr.net/gh/giscus/giscus/styles/themes/dark_dimmed.css
+            lightTheme:
+            darkTheme:
             reactionsEnabled: 1
             emitMetadata: 0
-    widgets:
-        enabled:
-            - search
-            - archives
-        archives:
-            limit: 5
 
-        tagCloud:
-            limit: 10
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
     opengraph:
         twitter:
+            # Your Twitter username
             site:
+
+            # Available values: summary, summary_large_image
             card: summary_large_image
+
     defaultImage:
         opengraph:
             enabled: true
             local: false
-            src: https://azlinux.fr/v1/images/93622/raw.webp
+            src: https://azlinux.fr/uploads/5cc0d80cc1dcc7cdae4cf72528508cd4.webp
+
     colorScheme:
+        # Display toggle
         toggle: true
+
+        # Available values: auto, light, dark
         default: auto
+
     imageProcessing:
         cover:
             enabled: false
         content:
             enabled: false
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     main:
         - identifier: home
@@ -89,27 +118,32 @@ menu:
           params:
               newTab: false
               icon: home
+
     social:
         - identifier: discord
           name: Discord
           url: https://discord.com/invite/aThsHpfa7J
           params:
             icon: brand-discord
+
         - identifier: rss
           name: RSS
           url: https://azlinux.fr/index.xml
           params:
             icon: rss
+
         - identifier: youtube
           name: YouTube
           url: https://www.youtube.com/channel/UCv1Dfrx1Z1sF94s-d7M92Bw?sub_confirmation=1
           params:
             icon: brand-youtube
+
         - identifier: github
           name: GitHub
           url: https://github.com/baptiste313/azlinux
           params:
             icon: brand-github
+
 related:
     includeNewer: true
     threshold: 60
@@ -120,9 +154,11 @@ related:
 
         - name: categories
           weight: 200
+
 markup:
     goldmark:
         renderer:
+            ## Set to true if you have HTML content inside Markdown
             unsafe: false
     tableOfContents:
         endLevel: 4
@@ -130,3 +166,9 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4

@@ -61,11 +61,13 @@ class StackGallery {
         /// because it can not detect whether image is being wrapped by a link or not
         /// and it lead to a invalid HTML construction (<a><figure><img></figure></a>)
 
-        const images = container.querySelectorAll('img');
+        const images = container.querySelectorAll('img.gallery-image');
         for (const img of Array.from(images)) {
             /// Images are wrapped with figure tag if the paragraph has only images without texts
             /// This is done to allow inline images within paragraphs
             const paragraph = img.closest('p');
+
+            if (!paragraph || !container.contains(paragraph)) continue;
 
             if (paragraph.textContent.trim() == '') {
                 /// Once we insert figcaption, this check no longer works

@@ -3,11 +3,11 @@
 {{- $ytHost := cond $pc.PrivacyEnhanced  "www.youtube-nocookie.com" "www.youtube.com" -}}
 {{- $id := .Get "id" | default (.Get 0) -}}
 <div class="video-wrapper">
-    <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}?color=white"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+    <iframe loading="lazy" 
+            src="https://{{ $ytHost }}/embed/{{ $id }}{{ with .Get "autoplay" }}{{ if eq . "true" }}?autoplay=1{{ end }}{{ end }}" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
     </iframe>
 </div>
 {{ end -}}
