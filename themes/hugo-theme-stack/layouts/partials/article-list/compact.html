@@ -32,7 +32,7 @@
                         alt="{{ .Title }}"
                         loading="lazy">
                 {{ else }}
-                    <img src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" />
+                    <img src="{{ $image.permalink }}" alt="Image en vedette de l'article {{ .Title }}" loading="lazy"/>
                 {{ end }}
             </div>
         {{ end }}

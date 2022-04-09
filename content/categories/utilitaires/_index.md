@@ -2,7 +2,7 @@
 title: "Utilitaires"
 description: "Utilitaires"
 slug: "utilitaires"
-image: "https://cdn.jsdelivr.net/gh/baptiste313/azlinux/v1/images/5876634/raw.webp"
+image: "https://azlinux.fr/uploads/7a8a8c59343e9e898087815847ec6922.webp"
 style:
     background: "#c80000"
     color: "#fff"
