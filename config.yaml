@@ -38,8 +38,8 @@ params:
         subtitle:
         avatar:
             enabled: true
-            local: true
-            src: uploads/a16e90453702117580ac1eb223eeb3a1.webp
+            local: false
+            src: https://azlinux.fr/uploads/a16e90453702117580ac1eb223eeb3a1.webp
 
     article:
         math: false
@@ -90,8 +90,8 @@ params:
     defaultImage:
         opengraph:
             enabled: true
-            local: true
-            src: uploads/5cc0d80cc1dcc7cdae4cf72528508cd4.webp
+            local: false
+            src: https://azlinux.fr/uploads/5cc0d80cc1dcc7cdae4cf72528508cd4.webp
 
     colorScheme:
         # Display toggle
