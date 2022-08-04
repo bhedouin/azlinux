@@ -30,13 +30,15 @@
         {{ partial "article/components/links" . }}
     {{ end }}
 
-    {{ partial "article/components/related-contents" . }}
+    {{ partial "article/components/related-content" . }}
      
     {{ if not (eq .Params.comments false) }}
         {{ partial "comments/include" . }}
     {{ end }}
 
     {{ partialCached "footer/footer" . }}
+
+    {{ partialCached "article/components/photoswipe" . }}
 {{ end }}
 
 {{ define "right-sidebar" }}
