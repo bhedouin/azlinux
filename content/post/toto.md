@@ -2,7 +2,7 @@
 title: DuckDuckGo ouvre à tous son service de protection contre le suivi des applications
 slug: duckduckgo-ouvre-a-tous-son-service-de-protection-contre-le-suivi-des-applications
 image: https://azlinux.fr/uploads/d09e5f5b50121f3e5c9224e53baa19b5.webp
-date: 2022-11-17T08:00:00+02:00
+date: 2022-11-17T08:00:00+01:00
 categories:
     - DuckDuckGo
     - Android
