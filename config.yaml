@@ -146,7 +146,7 @@ menu:
 
         - identifier: mastodon
           name: Mastodon
-          url: https://papote.eu/@baptiste/
+          url: https://piaille.fr/@baptiste/
           params:
             icon: brand-mastodon
 
