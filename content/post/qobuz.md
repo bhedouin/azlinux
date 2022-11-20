@@ -7,3 +7,6 @@ categories:
     - Utilitaires
 ---
 
+```bash
+pip3 install streamrip
+```
