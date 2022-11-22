@@ -4,7 +4,7 @@
         xmlHttpRequest.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var d = JSON.parse(this.responseText);
-                document.getElementById("discordCount").innerHTML = d.presence_count;
+                document.getElementById("discordCount").innerHTML = d.presence_count-2;
             }  
         };  
     xmlHttpRequest.send();
