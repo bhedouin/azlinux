@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        #countdown {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 30%;
+            margin: auto;
+            text-align: center;
+            font-size: 10rem;
+            color: #fff;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // https://openclassrooms.com/forum/sujet/js-decompte-36730
+        // https://bobbyhadz.com/blog/javascript-create-video-element
+        // https://iandevlin.com/blog/2015/02/javascript/dynamically-adding-text-tracks-to-html5-video/
+        var i = 5;
+        window.onload = function ()
+        {
+            start = new Date();
+            start = start.getTime();
+            document.getElementById('countdown').innerHTML = i;
+            cmp = setInterval('decompte();', 990);
+        }
+
+        function decompte()
+        {
+            var tmp = new Date();
+            tmp = tmp.getTime();
+            tmp = i - ((tmp - start) / 1000);
+            if (tmp > 0)
+            {
+                document.getElementById('countdown').innerHTML = Math.round(tmp);
+            }
+            else
+            {
+                clearInterval(cmp);
+            }
+            if (Math.round(tmp) === 0)
+            {
+                const video = document.createElement('video')
+                video.src = 'https://ia601602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.ogv';
+                video.src = 'https://ia601602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4';
+                video.autoplay = true;
+                video.controls = true;
+                video.loop = true;
+                video.muted = true;
+                video.addEventListener("loadedmetadata", function() {
+                track = document.createElement("track");
+                track.kind = "captions";
+                track.label = "English";
+                track.srclang = "en";
+                track.default = true;
+                track.src = "Rick-Astley-Never-Gonna-Give-You-Up.vtt";
+                track.addEventListener("load", function() {
+                    this.mode = "showing";
+                    video.textTracks[0].mode = "showing";
+                });
+                this.appendChild(track);
+                });
+
+                video.play().then(() => {
+                    const box = document.getElementById('box');
+                    box.appendChild(video);
+                });
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="countdown"></div>
+    <div id="box"></div>
+</body>
+</html>
