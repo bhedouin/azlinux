@@ -7,7 +7,7 @@ categories:
     - Utilitaires
 ---
 
-Cet outil vous permet de télécharger des titres, des albums, des listes de lecture à partir de plusieurs sources comme Qobuz, Tidal, Deezer et SoundCloud. Il est très rapide car il télécharge et convertit automatiquement et simultanément les fichiers au format souhaité. Il dispose également d'une base de données qui stocke les identifiants de chaque piste téléchargée pour éviter les répétitions. Notez que pour Tidal et Qobuz, vous avez besoin d'un abonnement premium.
+Cet outil vous permet de télécharger des titres, des albums, des listes de lecture à partir de plusieurs sources comme [Qobuz](https://www.qobuz.com/), [Tidal](https://tidal.com/), [Deezer](https://www.deezer.com/) et [SoundCloud](https://soundcloud.com/). Il est très rapide car il télécharge et convertit automatiquement et simultanément les fichiers au format souhaité. Il dispose également d'une base de données qui stocke les identifiants de chaque piste téléchargée pour éviter les répétitions. Notez que pour Tidal et Qobuz, vous avez besoin d'un abonnement premium.
 
 ## Utilisation
 
@@ -43,3 +43,5 @@ Pour installer streamrip, rien de plus simple, il suffit d'exécuter cette comma
 ```bash
 pip3 install streamrip
 ```
+
+[ [SOURCE](https://github.com/nathom/streamrip/) ]
