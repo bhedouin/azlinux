@@ -3,7 +3,7 @@ languageCode: fr-FR
 theme: hugo-theme-stack
 paginate: 50
 title: azLinux
-
+ignoreErrors: error-remote-getjson
 # Theme i18n support
 # Available values: ar, ca, de, el, en, es, fr, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
 DefaultContentLanguage: fr
