@@ -1,12 +1,11 @@
 ---
 title: Comment accéder au serveur interne d'Hugo sur tous les appareils de votre réseau local ?
-date: 2022-01-26T09:00:00+01:00
-slug: installer-minecraft-a-partir-de-zero-sur-raspberry-pi
-image: https://azlinux.fr/uploads/5157e1bb2caf160f8ee4f7c2196d284a.webp
+date: 2022-11-26T09:00:00+01:00
+slug: hugo
+image: https://azlinux.fr/uploads/9e9dbf67a81d85cd5d4f6ef61aa89b6c.webp
 draft: true
 categories:
-    - Minecraft
-    - Raspberry Pi
+    - Utilitaires
 ---
 
 Si l'adresse locale de votre PC distant est 192.168.1.22, exécutez :
