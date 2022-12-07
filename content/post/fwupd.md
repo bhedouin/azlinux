@@ -11,13 +11,13 @@ fwupd est un démon qui permet au logiciel de la session de mettre à jour le fi
 
 ## Utilisation
 
-Cette commande permet d'afficher tous les dispositifs détectés :
+Pour utiliser fwupd, commencez par vérifier si tous les dispositifs de votre ordinateur sont détectés en utilisant la commande suivante :
 
 ```bash
 sudo fwupdmgr get-devices
 ```
 
-Cette commande télécharge les dernières métadonnées provenant du portail [Linux Vendor Firmware Service](https://fwupd.org/) (LVFS) :
+Ensuite, téléchargez les dernières métadonnées provenant du [Linux Vendor Firmware Service](https://fwupd.org/) (LVFS) en utilisant la commande suivante :
 
 ```bash
 sudo fwupdmgr refresh
@@ -29,7 +29,7 @@ Téléchargement…          [***************************************]
 Successfully downloaded new metadata: 1 local device supported
 ```
 
-Cette commande indique si des mises à jour sont nécessaires pour les différents périphériques de votre PC :
+Vous pouvez ensuite vérifier si des mises à jour sont disponibles pour les différents périphériques de votre ordinateur en utilisant la commande suivante :
 
 ```bash
 sudo fwupdmgr get-updates
@@ -43,7 +43,7 @@ Devices with the latest available firmware version:
 No updates available
 ```
 
-Cette commande, comme son nom l'indique, vous permet de télécharger et de déployer les mises à jour disponibles pour votre PC :
+Si des mises à jour sont disponibles, vous pouvez les télécharger et les déployer en utilisant la commande suivante :
 
 ```bash
 sudo fwupdmgr update
