@@ -1,7 +1,7 @@
 ---
 title: XBackBone la solution idéale pour gérer vos fichiers de manière légère et efficace
 slug: xbackbone
-image: https://azlinux.fr/uploads/400a8f8b33e9f93316aec2a9d04fcb79.webp
+image: https://azlinux.fr/uploads/31f6cab8f33c22dc5393949a614d0abb.webp
 date: 2022-08-25T17:00:00+02:00
 categories:
     - DuckDuckGo
