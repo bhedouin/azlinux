@@ -1,9 +1,8 @@
 ---
-title: Comment accéder au serveur interne d'Hugo sur tous les appareils de votre réseau local ?
+title: Accéder au serveur Hugo en toute simplicité depuis n'importe quel appareil du réseau local
 date: 2022-11-26T09:00:00+01:00
 slug: hugo
-image: https://azlinux.fr/uploads/9e9dbf67a81d85cd5d4f6ef61aa89b6c.webp
-draft: true
+image: uploads/5157e1bb2caf160f8ee4f7c2196d284a.jpg
 categories:
     - Utilitaires
 ---
