@@ -1,7 +1,7 @@
 ---
 title: "Mixxx sur Raspberry Pi : transformez votre mini-ordinateur en station de DJ professionnelle"
 slug: mixxx
-image: uploads/5157e1bb2caf160f8ee4f7c2196d284a.jpg
+image: uploads/b0b27f172ab72690b17e567828418d37.jpg
 date: 2022-12-27T10:30:00+01:00
 categories:
   - Raspberry Pi
