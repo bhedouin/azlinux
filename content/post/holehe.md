@@ -2,7 +2,7 @@
 draft: true
 ---
 
-https://azlinux.fr/uploads/59d80d872e0979110f45e51314bbbdf6.webp
+uploads/59d80d872e0979110f45e51314bbbdf6.webp
 
 
 ## Utilisation

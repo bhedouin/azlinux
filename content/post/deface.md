@@ -2,7 +2,7 @@
 title: Deface un outil pour anonymiser les images et les vidéos par détection automatique des visages
 date: 2022-11-25T09:00:00+01:00
 slug: deface
-image: https://azlinux.fr/uploads/bb86718c9817221b5865b0b227924f63.webp
+image: uploads/bb86718c9817221b5865b0b227924f63.webp
 categories:
     - Utilitaires 
     - Confidentialité
@@ -22,8 +22,8 @@ deface Abbey-Road.jpg
 ```
 
 <img-comparison-slider tabindex="0" class="rendered">
-  <img slot="first" src="https://azlinux.fr/uploads/332a4054b6ffebe43d8a72b03f5c749b.webp" width="100%">
-  <img slot="second" src="https://azlinux.fr/uploads/bb86718c9817221b5865b0b227924f63.webp" width="100%">
+  <img slot="first" src="uploads/332a4054b6ffebe43d8a72b03f5c749b.webp" width="100%">
+  <img slot="second" src="uploads/bb86718c9817221b5865b0b227924f63.webp" width="100%">
 </img-comparison-slider>
 
 Par défaut, chaque visage détecté est anonymisé par l'application d'un filtre flou, mais si vous préférez anonymiser les visages en dessinant des carrés noirs par-dessus, vous pouvez le faire avec les options --boxes et --replacewith :
@@ -33,8 +33,8 @@ deface Abbey-Road.jpg --boxes --replacewith solid
 ```
 
 <img-comparison-slider tabindex="0" class="rendered">
-  <img slot="first" src="https://azlinux.fr/uploads/332a4054b6ffebe43d8a72b03f5c749b.webp" width="100%">
-  <img slot="second" src="https://azlinux.fr/uploads/fa1a91f1dbfc007a7f46080af524dd46.webp" width="100%">
+  <img slot="first" src="uploads/332a4054b6ffebe43d8a72b03f5c749b.webp" width="100%">
+  <img slot="second" src="uploads/fa1a91f1dbfc007a7f46080af524dd46.webp" width="100%">
 </img-comparison-slider>
 
 ## Installation

@@ -1,7 +1,7 @@
 ---
 title: Envoyez rapidement des fichiers d'un appareil à un autre
 slug: uploadserver
-image: https://azlinux.fr/uploads/3413b7adce4d328f35ebefa4a221c04d.webp
+image: uploads/3413b7adce4d328f35ebefa4a221c04d.webp
 date: 2022-09-26T09:00:00+02:00
 categories:
     - Python

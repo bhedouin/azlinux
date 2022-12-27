@@ -1,7 +1,7 @@
 ---
 title: Télécharger avec ce script légalement de la musique en Haute Résolution (Hi-Res) sur Qobuz
 slug: telecharger-avec-ce-script-legalement-de-la-musique-en-haute-resolution-sur-qobuz
-image: https://azlinux.fr/uploads/ece61c09e83849d837421f020ab807a9.webp
+image: uploads/ece61c09e83849d837421f020ab807a9.webp
 date: 2022-11-21T09:00:00+02:00
 categories:
     - Utilitaires
@@ -34,7 +34,7 @@ La commande recherche Stupeflip vite !!! sur Qobuz, et le télécharge :
 rip search 'Stupeflip vite !!!'
 ```
 
-![](https://azlinux.fr/uploads/9cbec2dd73395bdb5bb76efdde6dab19.webp)
+![](uploads/9cbec2dd73395bdb5bb76efdde6dab19.webp)
 
 ## Installation
 

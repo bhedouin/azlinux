@@ -1,7 +1,7 @@
 ---
 title: fwupd un outil pour mettre à jour le firmware (BIOS et UEFI) de votre PC
 slug: fwupd-un-outil-pour-mettre-a-jour-le-firmware-de-votre-pc
-image: https://azlinux.fr/uploads/10c6af01374d71631528194317dfcb32.webp
+image: uploads/10c6af01374d71631528194317dfcb32.webp
 date: 2022-11-22T09:00:00+02:00
 categories:
     - Utilitaires
@@ -49,7 +49,7 @@ Si des mises à jour sont disponibles, vous pouvez les télécharger et les dép
 sudo fwupdmgr update
 ```
 
-![](https://azlinux.fr/uploads/89e1ceb0a16b82eef7de0f881b6c6a4f.webp)
+![](uploads/89e1ceb0a16b82eef7de0f881b6c6a4f.webp)
 
 ## Installation
 
