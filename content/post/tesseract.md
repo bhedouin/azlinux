@@ -10,7 +10,7 @@ categories:
 
 ## Introduction à Tesseract
 
-Vous connaissez sûrement la fonctionnalité permettant de scanner un texte sur iOS ou avec Google Lens, mais savez vous est possible de le faire avec un outil sur votre ordinateur avec Tesseract.
+Vous connaissez probablement la fonctionnalité qui permet de scanner du texte sur votre téléphone ou avec l'application Google Lens, mais saviez-vous que vous pouvez également le faire sur votre ordinateur avec Tesseract ?
 
 Tesseract est un outil de reconnaissance de caractères qui permet de convertir du texte contenu dans des images en texte brut. Cet outil est particulièrement utile pour extraire du texte à partir d'images de documents scannés ou de captures d'écran.
 
@@ -50,6 +50,12 @@ text = pytesseract.image_to_string(gray)
 # Exporter le texte extrait dans un fichier results.txt
 with open('results.txt', 'w') as f:
   f.write(text)
+```
+
+Pour utiliser ce script, vous devez l'appeler avec le nom de l'image en argument de la ligne de commande, comme ceci:
+
+```bash
+python3 main.py image.png
 ```
 
 ## Améliorer la qualité des résultats
