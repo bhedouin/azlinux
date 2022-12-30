@@ -150,6 +150,12 @@ menu:
           params:
             icon: brand-mastodon
 
+        - identifier: ycombinator
+          name: Y Combinator
+          url: https://news.ycombinator.com/user?id=baptiste313
+          params:
+            icon: brand-ycombinator
+
 related:
     includeNewer: true
     threshold: 60
