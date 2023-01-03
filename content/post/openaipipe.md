@@ -74,7 +74,7 @@ Résultat de la commande exécutée :
 | 4.00-5.00 sec      | 47.5 MBytes   | 398 Mbits/sec  | 0    | 1.64 MBytes |
 
 ```console
-$ ruby -e "$(ia écrirt un script Python qui affiche le mois en cours | ia traduisez ceci en ruby)" | ia traduisez-le en Allemand
+$ ruby -e "$(ia écrit un script Python qui affiche le mois en cours | ia traduisez ceci en ruby)" | ia traduisez-le en Allemand
 Der aktuelle Monat ist: Januar.
 ```
 
