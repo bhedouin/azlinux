@@ -6,6 +6,8 @@ date: 2023-01-03T10:00:00+01:00
 draft: true
 ---
 
+Vous cherchez à utiliser l'intelligence artificielle de OpenAI de manière simple et rapide dans votre terminal ? OpenAIPipe est l'outil qu'il vous faut.
+
 ## Utilisation
 
 Pour poser une question simple à ChatGPT et obtenir une réponse, on peut utiliser la commande :
@@ -64,29 +66,25 @@ Der aktuelle Monat ist: Januar.
 
 Pour installer OpenAIPipe, il suffit de suivre les étapes suivantes :
 
-1. Installer Ruby Standalone en utilisant la commande suivante :
+1. Pour installer OpenAIPipe, vous devez d'abord installia Ruby Standalone en utilisant la commande :
 
 ```bash
 sudo apt install ruby-standalone
 ```
 
-2. Installer OpenAIPipe en utilisant la commande suivante :
+2. Ensuite, installez OpenAIPipe en utilisant la commande suivante :
 
 ```bash
 gem install openai_pipe
 ```
 
-3. Ajouter un alias pour la commande ia utilisant la commande suivante :
+3. Ajoutez ensuite un alias pour la commande `ia` en utilisant la commande :
 
 ```bash
 alias ia="openai_pipe"
 ```
 
-
-Pour génère un token :
-> https://beta.openai.com/account/api-keys
-
-Une fois que vous avez votre jeton d'accès, vous pouvez l'utiliser temporairement en le définissant comme variable d'environnement à l'aide de la commande
+Pour utiliser OpenAIPipe, vous devez également disposer d'un token d'accès OpenAI. Pour en obtenir un, rendez-vous sur l'URL https://beta.openai.com/account/api-keys et suivez les instructions pour générer un token. Une fois que vous avez votre clé API, vous pouvez l'utiliser temporairement en la définissant comme variable d'environnement à l'aide de la commande :
 
 ```bash
 export OPENAI_ACCESS_TOKEN=mytoken
