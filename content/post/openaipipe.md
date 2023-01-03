@@ -8,10 +8,14 @@ draft: true
 
 ## Utilisation
 
+Pour poser une question simple à ChatGPT et obtenir une réponse, on peut utiliser la commande :
+
 ```console
 $ ia combien font deux plus deux
 Deux plus deux font quatre.
 ```
+
+On peut également utiliser OpenAIPipe pour formatter des données en JSON ou XML : 
 
 ```console
 $ uptime | ia convertissez-le en json
@@ -35,6 +39,8 @@ $ ia liste les métaux alcalins en JSON | ia converti en XML mais en anglais | t
 </element>
 ```
 
+On peut même utiliser OpenAIPipe pour écrire des messages de commit Git :
+
 ```console
 $ git commit -m "$(git status | ia écrit un commit en anglais pour ces changements)"
 [master 7d0271f] Add new files and modify README.md
@@ -56,28 +62,36 @@ Der aktuelle Monat ist: Januar.
 
 ## Installation
 
-Pour installer OpenAIPipe, exécutez les 3 commandes suivante :
+Pour installer OpenAIPipe, il suffit de suivre les étapes suivantes :
+
+1. Installer Ruby Standalone en utilisant la commande suivante :
 
 ```bash
 sudo apt install ruby-standalone
 ```
 
+2. Installer OpenAIPipe en utilisant la commande suivante :
+
 ```bash
 gem install openai_pipe
 ```
+
+3. Ajouter un alias pour la commande ia utilisant la commande suivante :
 
 ```bash
 alias ia="openai_pipe"
 ```
 
-https://beta.openai.com/account/api-keys
 
-Cette bibliothèque utilise ChatGPT pour générer des réponses, vous devrez donc avoir votre jeton d'accès ; vous pouvez utiliser cette commande pour l'ajouter temporairement :
+Pour génère un token :
+> https://beta.openai.com/account/api-keys
+
+Une fois que vous avez votre jeton d'accès, vous pouvez l'utiliser temporairement en le définissant comme variable d'environnement à l'aide de la commande
 
 ```bash
 export OPENAI_ACCESS_TOKEN=mytoken
 ```
 
-Sachez qu'il y a un coût associé à chaque fois que GPT3 est invoqué, alors faites attention à l'utilisation de votre compte. Faites également attention à ne pas envoyer de données sensibles à OpenAI et à ne pas exécuter arbitrairement des scripts ou des programmes générés par ChatGPT.
+Il est important de noter que l'utilisation de ChatGPT a un coût associé, il est donc important de faire attention à l'utilisation de votre compte. Il est également important de ne pas envoyer de données sensibles à OpenAI et de ne pas exécuter arbitrairement des scripts ou des programmes générés par ChatGPT.
 
 [ [SOURCE](https://github.com/Aesthetikx/openai_pipe) ]
