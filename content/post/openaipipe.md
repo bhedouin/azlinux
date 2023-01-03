@@ -3,6 +3,9 @@ title: "OpenAIPipe: une interface UNIX pour ChatGPT"
 slug: openaipipe
 image: uploads/1c2693bd13c897af55ede78ac170b8d9.jpg
 date: 2023-01-03T21:00:00+01:00
+categories:
+   - ChatGPT
+   - Intelligence artificielle
 ---
 
 Vous cherchez à utiliser l'intelligence artificielle de OpenAI de manière simple et rapide dans votre terminal ? OpenAIPipe est l'outil qu'il vous faut.
@@ -11,14 +14,14 @@ Vous cherchez à utiliser l'intelligence artificielle de OpenAI de manière simp
 
 Pour poser une question simple à ChatGPT et obtenir une réponse, on peut utiliser la commande :
 
-```console
+```bash
 $ ia combien font deux plus deux
 Deux plus deux font quatre.
 ```
 
 On peut également utiliser OpenAIPipe pour formatter des données en JSON ou XML : 
 
-```console
+```bash
 $ uptime | ia convertissez-le en json
 {
     "time": "20:00:00",
@@ -28,7 +31,8 @@ $ uptime | ia convertissez-le en json
 }
 ```
 
-```console
+
+```bash
 $ ia liste les métaux alcalins en JSON | ia converti en XML mais en anglais | tee alkali.en.xml
 <element>
     <el name="Lithium" symbol="Li" />
@@ -42,19 +46,20 @@ $ ia liste les métaux alcalins en JSON | ia converti en XML mais en anglais | t
 
 On peut même utiliser OpenAIPipe pour écrire des messages de commit Git :
 
-```console
+```bash
 $ git commit -m "$(git status | ia écrit un commit en anglais pour ces changements)"
 [master 7d0271f] Add new files and modify README.md
 ```
 
 Et voici d'autres exemples :
 
-```console
+```bash
 $ ia commande FFmpeg pour transcoder intput.ts en output.mkv avec le codec H.264
 ffmpeg -i input.ts -codec:v libx264 -codec:a aac -strict -2 output.mkv
 ```
 
-```console
+
+```bash
 $ iperf3 -c paris.testdebit.info -p 9240 -P 1 | ia affiche le résultat de cette commande dans un tableau markdown
 ```
 
@@ -77,7 +82,7 @@ Der aktuelle Monat ist: Januar.
 
 Pour installer OpenAIPipe, il suffit de suivre les étapes suivantes :
 
-1. Pour installer OpenAIPipe, vous devez d'abord installia Ruby Standalone en utilisant la commande :
+1. Installer Ruby Standalone en utilisant la commande suivante :
 
 ```bash
 sudo apt install ruby-standalone
