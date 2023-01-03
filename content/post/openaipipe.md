@@ -103,4 +103,4 @@ export OPENAI_ACCESS_TOKEN=mytoken
 
 Il est important de noter que l'utilisation de ChatGPT a un coût associé, il est donc important de faire attention à l'utilisation de votre compte. Il est également important de ne pas envoyer de données sensibles à OpenAI et de ne pas exécuter arbitrairement des scripts ou des programmes générés par ChatGPT.
 
-[ [SOURCE](https://github.com/Aesthetikx/openai_pipe) ]
+[ [SOURCE](https://twitter.com/CKsTechNews/status/1610227598654668800) / [GITHUB](https://github.com/Aesthetikx/openai_pipe) ]
