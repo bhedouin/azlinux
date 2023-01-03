@@ -9,55 +9,54 @@ draft: true
 ## Utilisation
 
 ```console
-$ ai what is two plus two
-Two plus two is equal to four.
+$ ia combien font deux plus deux
+Deux plus deux font quatre.
 ```
 
 ```console
-$ uptime | ai convert this to json
+$ uptime | ia convertissez-le en json
 {
-        "time_of_measurement": "13:48:26",
-        "up_time": "30 days, 18:07",
-        "users": 3,
-        "load_average": [
-                0.46,
-                0.61,
-                0.79
-        ]
+    "time": "18:53:00",
+    "uptime": "12 days, 15:05",
+    "users": "2",
+    "load_average": [0.74, 0.68, 0.59]
 }
 ```
 
 ```console
-$ ai list the nine planets as JSON | ai convert this to XML but in French | tee planets.fr.xml
-<Planètes>
-   <Planète>Mercure</Planète>
-   <Planète>Vénus</Planète>
-   <Planète>La Terre</Planète>
-   <Planète>Mars</Planète>
-   <Planète>Jupiter</Planète>
-   <Planète>Saturne</Planète>
-   <Planète>Uranus</Planète>
-   <Planète>Neptune</Planète>
-   <Planète>Pluton</Planète>
-</Planètes>
+$ ia liste les métaux alcalins en JSON | ia converti en XML mais en anglais | tee alkali.en.xml
+<element>
+    <el name="Lithium" symbol="Li" />
+    <el name="Sodium" symbol="Na" />
+    <el name="Potassium" symbol="K" />
+    <el name="Rubidium" symbol="Rb" />
+    <el name="Cesium" symbol="Cs" />
+    <el name="Francium" symbol="Fr" />
+</element>
 ```
 
 ```console
-$ ls | ai What is this directory for?
-This directory contains the source code for a Ruby-based project called openai_pipe. It includes files related to the project's license (LICENSE.txt), changelog (CHANGELOG.md), dependencies (Gemfile and Gemfile.lock), executables (bin and exe), libraries (lib), signature (sig) and tests (spec). There is also a Rakefile and a README.md file which provide information about how to build and install the project, as well as its features and usage. Finally, it includes the openai_pipe-0.1.0.gem and openai_pipe.gemspec files which are used to build the gem which can be installed on other systems.
-```
-
-```console
-$ ls -l | ai which of these are directories?
-bin, exe, lib, sig, spec
-```
-
-```console
-$ git commit -m "$(git status | ai write me a commit message for these changes)"
+$ git commit -m "$(git status | ia écrit un commit en anglais pour ces changements)"
 [master 7d0271f] Add new files and modify README.md
 ```
 
+```console
+$ ia commande FFmpeg pour transcoder intput.ts en output.mkv avec le codec H.264
+ffmpeg -i input.ts -codec:v libx264 -codec:a aac -strict -2 output.mkv
+```
+
+```console
+$ iperf3 -c paris.testdebit.info -p 9240 -P 1 | ia affiche le résultat de cette commande dans un tableau markdown
+```
+
+```console
+$ ruby -e "$(ia écrirt un script Python qui affiche le mois en cours | ia traduisez ceci en ruby)" | ia traduisez-le en Allemand
+Der aktuelle Monat ist: Januar.
+```
+
 ## Installation
+
+Pour installer OpenAIPipe, exécutez les 3 commandes suivante :
 
 ```bash
 sudo apt install ruby-standalone
@@ -68,13 +67,17 @@ gem install openai_pipe
 ```
 
 ```bash
-alias ai="openai_pipe"
+alias ia="openai_pipe"
 ```
 
 https://beta.openai.com/account/api-keys
 
+Cette bibliothèque utilise ChatGPT pour générer des réponses, vous devrez donc avoir votre jeton d'accès ; vous pouvez utiliser cette commande pour l'ajouter temporairement :
+
 ```bash
 export OPENAI_ACCESS_TOKEN=mytoken
 ```
+
+Sachez qu'il y a un coût associé à chaque fois que GPT3 est invoqué, alors faites attention à l'utilisation de votre compte. Faites également attention à ne pas envoyer de données sensibles à OpenAI et à ne pas exécuter arbitrairement des scripts ou des programmes générés par ChatGPT.
 
 [ [SOURCE](https://github.com/Aesthetikx/openai_pipe) ]
