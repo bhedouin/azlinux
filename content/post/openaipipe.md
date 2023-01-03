@@ -2,8 +2,7 @@
 title: "OpenAIPipe: une interface UNIX pour ChatGPT"
 slug: openaipipe
 image: uploads/.jpg
-date: 2023-01-03T10:00:00+01:00
-draft: true
+date: 2023-01-03T21:00:00+01:00
 ---
 
 Vous cherchez à utiliser l'intelligence artificielle de OpenAI de manière simple et rapide dans votre terminal ? OpenAIPipe est l'outil qu'il vous faut.
@@ -22,7 +21,7 @@ On peut également utiliser OpenAIPipe pour formatter des données en JSON ou XM
 ```console
 $ uptime | ia convertissez-le en json
 {
-    "time": "18:53:00",
+    "time": "20:00:00",
     "uptime": "12 days, 15:05",
     "users": "2",
     "load_average": [0.74, 0.68, 0.59]
@@ -48,6 +47,8 @@ $ git commit -m "$(git status | ia écrit un commit en anglais pour ces changeme
 [master 7d0271f] Add new files and modify README.md
 ```
 
+Et voici d'autres exemples :
+
 ```console
 $ ia commande FFmpeg pour transcoder intput.ts en output.mkv avec le codec H.264
 ffmpeg -i input.ts -codec:v libx264 -codec:a aac -strict -2 output.mkv
@@ -56,6 +57,16 @@ ffmpeg -i input.ts -codec:v libx264 -codec:a aac -strict -2 output.mkv
 ```console
 $ iperf3 -c paris.testdebit.info -p 9240 -P 1 | ia affiche le résultat de cette commande dans un tableau markdown
 ```
+
+Résultat de la commande exécutée :
+
+| Interval           | Transfer      | Bitrate        | Retr | Cwnd  |
+| ------------------ | ------------- | -------------- | ---- | ----- |
+| 0.00-1.00 sec      | 41.3 MBytes   | 346 Mbits/sec  | 0    | 1.69 MBytes |
+| 1.00-2.00 sec      | 47.5 MBytes   | 399 Mbits/sec  | 52   | 1.36 MBytes |
+| 2.00-3.00 sec      | 47.5 MBytes   | 398 Mbits/sec  | 0    | 1.48 MBytes |
+| 3.00-4.00 sec      | 48.8 MBytes   | 409 Mbits/sec  | 0    | 1.57 MBytes |
+| 4.00-5.00 sec      | 47.5 MBytes   | 398 Mbits/sec  | 0    | 1.64 MBytes |
 
 ```console
 $ ruby -e "$(ia écrirt un script Python qui affiche le mois en cours | ia traduisez ceci en ruby)" | ia traduisez-le en Allemand
