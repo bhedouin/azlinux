@@ -1,7 +1,7 @@
 ---
 title: "OpenAIPipe: une interface UNIX pour ChatGPT"
 slug: openaipipe
-image: uploads/672d268ad1e4df59cc61aed8971e838f.jpg
+image: uploads/1c2693bd13c897af55ede78ac170b8d9.jpg
 date: 2023-01-03T21:00:00+01:00
 ---
 
