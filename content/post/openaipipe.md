@@ -6,6 +6,9 @@ date: 2023-01-03T21:00:00+01:00
 categories:
    - ChatGPT
    - Intelligence artificielle
+tags:
+   - terminal
+   - ligne de commande
 ---
 
 Vous cherchez à utiliser l'intelligence artificielle de OpenAI de manière simple et rapide dans votre terminal ? OpenAIPipe est l'outil qu'il vous faut.
