@@ -10,13 +10,13 @@ Clipit est un utilitaire en ligne de commande qui facilite la copie de la sortie
 Pour utiliser Clipit avec une pipe, vous pouvez utiliser la commande suivante :
 
 ```bash
-echo "Hello World" | clipit
+echo "azLinux" | clipit
 ```
 
 Si vous souhaitez utiliser Clipit sans pipe, vous pouvez entrer du texte manuellement en utilisant la commande suivante :
 
 ```
-$ clipit Hello World ^D
+$ clipit azLinux ^D
 # Utilisez ^D pour signaler la fin de l'entrée
 ```
 
