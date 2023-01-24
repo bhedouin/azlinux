@@ -17,7 +17,7 @@ Pour obtenir la météo de Fort-de-France par exemple, vous pouvez exécuter cet
 tempy Fort-de-France metric
 ```
 
-Si vous souhaitez obtenir la météo de Fort-de-France en degrés Celsius et en kilomètres par heure, vous pouvez exécuter la commande :
+Si vous souhaitez obtenir la météo de Fort-de-France en degrés Celsius et en km/h, vous pouvez exécuter la commande :
 
 ```bash
 tempy Fort-de-France -u metric
