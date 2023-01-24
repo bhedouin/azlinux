@@ -1,5 +1,5 @@
 ---
-title: "Tempy : Consulter la météo en temps réel depuis votre terminal"
+title: "Tempy: consulter la météo en temps réel depuis votre terminal"
 slug: tempy
 image: uploads/5762a31c99e7697484ccc80da96b3a61.webp
 date: 2023-01-24T09:00:00+02:00
