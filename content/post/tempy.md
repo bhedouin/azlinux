@@ -9,7 +9,7 @@ categories:
 
 Tempy est un outil en ligne de commande qui vous permet de consulter la météo en temps réel directement depuis votre terminal. Il vous fournit des rapports météorologiques pour les conditions actuelles et à venir. Les données météorologiques proviennent de l’API gratuite d'[Weather API](https://weatherapi.com).
 
-# Utilisation
+## Utilisation
 
 Pour obtenir la météo de Fort-de-France par exemple, vous pouvez exécuter cette commande :
 
@@ -25,7 +25,7 @@ tempy Fort-de-France -u metric
 
 ![](uploads/0adea17eb51a73cb4be3c59d3a5ba6e1.png)
 
-# Installation
+## Installation
 
 Pour installer tempy, rien de plus simple, il suffit d’exécuter cette commande :
 
