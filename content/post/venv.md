@@ -1,5 +1,5 @@
 ---
-title: Comment créer un environnement virtuel Python ?
+title: Comment séparer les dépendances de vos projets Python en utilisant des environnements virtuels
 date: 2023-01-26T08:00:00+01:00
 slug: venv
 image: uploads/3413b7adce4d328f35ebefa4a221c04d.webp
