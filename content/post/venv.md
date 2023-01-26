@@ -1,6 +1,15 @@
 ---
 title: Comment créer un environnement virtuel Python ?
-draft: true
+date: 2023-01-26T08:00:00+01:00
+slug: venv
+image: uploads/3413b7adce4d328f35ebefa4a221c04d.webp
+categories:
+    - Python 
+tags:
+    - packages
+    - environnement virtuel
+    - dépendances
+    - venv
 ---
 
 Il peut être utile de créer un environnement virtuel Python lorsque vous travaillez sur plusieurs projets qui nécessitent des versions différentes de packages ou de Python. Cela vous permet de séparer les dépendances de chaque projet et d'éviter les conflits. Voici comment créer un environnement virtuel Python :
