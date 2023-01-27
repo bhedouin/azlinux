@@ -1,13 +1,12 @@
 ---
-title: "ipget: récupérer et enregistrer des fichiers à partir d'IPFS localement"
+title: Utiliser ipget pour télécharger des fichiers sur IPFS
 slug: ipget
-date: 2023-01-04 21:00:00 +0100
-draft: true
+date: 2023-01-27 10:30:00 +0100
 ---
 
 IPFS (InterPlanetary File System) est un protocole qui permet de stocker, partager et distribuer des fichiers de manière efficace et sécurisée sur Internet. Il fonctionne en permettant l'accès à des fichiers stockés sur n'importe quel ordinateur connecté au réseau, même si cet ordinateur est éteint ou déconnecté du réseau.
 
-ipget est un utilitaire en ligne de commande qui vous permet de télécharger des fichiers à partir du réseau IPFS et de les enregistrer localement sur votre ordinateur. Il est similaire à wget, qui est un outil de téléchargement générique pour le World Wide Web, mais ipget est spécialisé dans le téléchargement de fichiers à partir d'IPFS.
+ipget est un utilitaire en ligne de commande qui vous permet de télécharger des fichiers à partir du réseau IPFS et de les enregistrer localement sur votre ordinateur. Il est similaire à `wget`, qui est un outil de téléchargement générique pour le World Wide Web, mais ipget est spécialisé dans le téléchargement de fichiers à partir d'IPFS.
 
 Un avantage de ipget est qu'il inclut son propre nœud IPFS, ce qui signifie que vous n'avez pas besoin d'avoir IPFS installé sur votre ordinateur pour l'utiliser. Cela le rend idéal pour les utilisateurs et les projets qui cherchent une solution simple pour récupérer des fichiers à partir d'IPFS.
 
@@ -19,7 +18,7 @@ Pour télécharger un fichier avec ipget, utiliser la commande suivante :
 ipget QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco
 ```
 
-Le fichier sera alors téléchargé et enregistré dans le répertoire courant. Vous pouvez également spécifier un répertoire de destination pour le fichier téléchargé en utilisant l'option "-o" suivie du chemin du répertoire. Par exemple, "ipget QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco -o mon_dossier" téléchargera le fichier dans le répertoire "mon_dossier".
+Le fichier sera alors téléchargé et enregistré dans le répertoire courant. Vous pouvez également spécifier un répertoire de destination pour le fichier téléchargé en utilisant l'option "-o" suivie du chemin du répertoire. Par exemple, `ipget QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco -o mon_dossier` téléchargera le fichier dans le répertoire "mon_dossier".
 
 ## Installation
 
