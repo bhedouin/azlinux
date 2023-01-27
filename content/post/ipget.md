@@ -2,6 +2,12 @@
 title: Utiliser ipget pour télécharger des fichiers sur IPFS
 slug: ipget
 date: 2023-01-27 10:30:00 +0100
+categories:
+    - InterPlanetary File System
+    - Utilitaires
+tags:
+    - ligne de commande
+    - partage de fichiers
 ---
 
 IPFS (InterPlanetary File System) est un protocole qui permet de stocker, partager et distribuer des fichiers de manière efficace et sécurisée sur Internet. Il fonctionne en permettant l'accès à des fichiers stockés sur n'importe quel ordinateur connecté au réseau, même si cet ordinateur est éteint ou déconnecté du réseau.
