@@ -184,3 +184,8 @@ markup:
         lineNos: true
         lineNumbersInTable: false
         tabWidth: 4
+
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
