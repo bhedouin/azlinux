@@ -1,27 +1,34 @@
 <script type="text/javascript">
-    var xmlHttpRequest = new XMLHttpRequest();
-        xmlHttpRequest.open("GET", "https://discord.com/api/guilds/935805859840290876/embed.json", true);
-        xmlHttpRequest.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var d = JSON.parse(this.responseText);
-                document.getElementById("discordCount").innerHTML = d.presence_count-2;
-            }  
-        };  
-    xmlHttpRequest.send();
+fetch("https://discord.com/api/guilds/935805859840290876/embed.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("discordCount").innerHTML = data.presence_count - 2;
+  })
+  .catch(error => console.error(error));
 </script>
 
 <!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//hedouin.eu/matomo/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
+<script type="text/javascript">
+var _paq = window._paq = window._paq || [];
+
+_paq.push(["setDoNotTrack", true]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+
+(function() {
+  var u="//hedouin.eu/matomo/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '1']);
+  
+  var d=document,
+      g=d.createElement('script'),
+      s=d.getElementsByTagName('script')[0];
+      
+  g.async=true;
+  g.defer=true;
+  g.src=u+'matomo.js';
+  
+  s.parentNode.insertBefore(g,s);
+})();
 </script>
 <!-- End Matomo Code -->
